@@ -13,6 +13,7 @@
 		1DA8743E286A10A7002B3623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA8743C286A10A7002B3623 /* Main.storyboard */; };
 		1DA87440286A10A8002B3623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DA8743F286A10A8002B3623 /* Assets.xcassets */; };
 		1DA87443286A10A8002B3623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA87441286A10A8002B3623 /* LaunchScreen.storyboard */; };
+		1DA8744C286A2DD3002B3623 /* UserScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8744B286A2DD3002B3623 /* UserScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1DA8743F286A10A8002B3623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DA87442286A10A8002B3623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DA87444286A10A8002B3623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA8744B286A2DD3002B3623 /* UserScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		1DA87435286A10A7002B3623 /* LogInScreen */ = {
 			isa = PBXGroup;
 			children = (
+				1DA8744A286A2DB4002B3623 /* ViewControllers */,
 				1DA87436286A10A7002B3623 /* AppDelegate.swift */,
 				1DA87438286A10A7002B3623 /* SceneDelegate.swift */,
-				1DA8743A286A10A7002B3623 /* ViewController.swift */,
 				1DA8743C286A10A7002B3623 /* Main.storyboard */,
 				1DA8743F286A10A8002B3623 /* Assets.xcassets */,
 				1DA87441286A10A8002B3623 /* LaunchScreen.storyboard */,
 				1DA87444286A10A8002B3623 /* Info.plist */,
 			);
 			path = LogInScreen;
+			sourceTree = "<group>";
+		};
+		1DA8744A286A2DB4002B3623 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DA8743A286A10A7002B3623 /* ViewController.swift */,
+				1DA8744B286A2DD3002B3623 /* UserScreenViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA8743B286A10A7002B3623 /* ViewController.swift in Sources */,
+				1DA8744C286A2DD3002B3623 /* UserScreenViewController.swift in Sources */,
 				1DA87437286A10A7002B3623 /* AppDelegate.swift in Sources */,
 				1DA87439286A10A7002B3623 /* SceneDelegate.swift in Sources */,
 			);
