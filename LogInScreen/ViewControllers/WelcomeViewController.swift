@@ -8,18 +8,15 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    @IBOutlet var welcomeUserField: UILabel!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let gradientLayer = CAGradientLayer()
-//        gradientLayer.frame = view.bounds
-//        gradientLayer.colors = [
-//            UIColor.systemYellow.cgColor,
-//            UIColor.systemGray.cgColor,
-//        ]
-//        view.layer.addSublayer(gradientLayer)
     }
-
+    
+    @IBAction func logOutAction(_ sender: Any) {
+    }
+    
 }

@@ -37,7 +37,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Log In"/>
                                                 <connections>
-                                                    <action selector="logInButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDL-qJ-HsJ"/>
+                                                    <action selector="logInButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4t-jG-tjA"/>
                                                     <segue destination="BHl-JG-JSL" kind="presentation" modalPresentationStyle="fullScreen" id="oQu-c4-40T"/>
                                                 </connections>
                                             </button>
@@ -49,10 +49,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkD-eh-X0J">
                                                 <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
                                                 <state key="normal" title="Forgot User Name?"/>
+                                                <connections>
+                                                    <action selector="indicateUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQs-d0-9cZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49X-ov-QQ4">
                                                 <rect key="frame" x="209" y="0.0" width="134" height="30"/>
                                                 <state key="normal" title="Forgot password?"/>
+                                                <connections>
+                                                    <action selector="indicateUserPassword" destination="BYZ-38-t0r" eventType="touchUpInside" id="edP-q8-dFl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -70,7 +76,6 @@
                     <tabBarItem key="tabBarItem" title="Item" id="kHF-c5-Cyh"/>
                     <navigationItem key="navigationItem" id="xw2-gE-Wrc"/>
                     <connections>
-                        <outlet property="logInButton" destination="VTi-xR-zim" id="qwX-2q-bFw"/>
                         <outlet property="userName" destination="t8k-uq-KwC" id="CwV-Ph-5j5"/>
                         <outlet property="userPassword" destination="QdI-Hi-M4F" id="539-NF-4ph"/>
                     </connections>
@@ -159,6 +164,9 @@
                                         <rect key="frame" x="90" y="236" width="87" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Log Out"/>
+                                        <connections>
+                                            <action selector="logOutAction:" destination="9xi-n1-e41" eventType="touchUpInside" id="46x-n7-T78"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -171,6 +179,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="User" image="person.crop.circle.fill" catalog="system" id="y0V-RH-QPf"/>
+                    <connections>
+                        <outlet property="welcomeUserField" destination="q9h-ir-xTu" id="qj8-lF-oPQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9v-eN-avb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
